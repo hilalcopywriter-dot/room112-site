@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ROOM 112 — Boîte de production visuelle · Casablanca</title>
+<meta name="description" content="ROOM 112 — boîte de production visuelle à Casablanca. Photo, vidéo, direction artistique.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<script>setTimeout(function(){var l=document.getElementById('loader');if(l&&!l.classList.contains('is-done')){l.classList.add('is-done');document.body.classList.add('is-ready');}},6000);</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,200..700;1,14..32,200..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div class="loader" id="loader">
+  <div class="loader__frame">
+    <span class="br br--tl"></span><span class="br br--tr"></span>
+    <span class="br br--bl"></span><span class="br br--br"></span>
+    <div class="loader__count"><span id="loaderNum">000</span></div>
+  </div>
+  <div class="loader__meta"><span>ROOM 112</span><span>MISE AU POINT…</span></div>
+  <div class="loader__bar"><i id="loaderBar"></i></div>
+</div>
+
+<!-- ============ TEXTURES ============ -->
+<div class="grain" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+<div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+<div class="scrollbar" aria-hidden="true"><i id="scrollProgress"></i></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="nav__logo" href="#top" data-cursor="haut">
+    <svg viewBox="0 0 425.2 425.2" class="mark" aria-label="ROOM 112"><g class="mark__g">
+      <polygon class="mark__br" points="36.57,111.4 36.57,34.87 114.8,34.87 114.8,47.62 49.32,47.62 49.32,111.4"/>
+      <polygon class="mark__br" points="310.39,34.87 388.62,34.87 388.62,111.4 375.87,111.4 375.87,47.62 310.39,47.62"/>
+      <polygon class="mark__br" points="36.57,285.73 49.32,285.73 49.32,349.51 114.8,349.51 114.8,362.26 36.57,362.26"/>
+      <polygon class="mark__br" points="310.39,349.51 375.87,349.51 375.87,285.73 388.62,285.73 388.62,362.26 310.39,362.26"/>
+      <polygon class="mark__d" points="101.2,153.07 147.97,128.41 147.97,299.33 101.2,299.33"/>
+      <polygon class="mark__d" points="169.23,117.35 216,93.54 216,299.33 169.23,299.33"/>
+      <polygon class="mark__d" points="322.3,198.14 280.63,226.2 280.63,244.91 322.3,244.91 322.3,299.33 238.11,299.33 238.11,207.49 281.48,178.58"/>
+      <polygon class="mark__red" points="238.11,93.54 322.3,147.12 322.3,198.14 281.48,178.58 238.11,152.22"/>
+    </g></svg>
+    <span class="nav__word">ROOM&nbsp;112</span>
+  </a>
+  <nav class="nav__links">
+    <a href="#studio">Studio</a>
+    <a href="#offre">Offre</a>
+    <a href="#process">Process</a>
+  </nav>
+  <a href="#contact" class="btn btn--sm magnetic" data-brief data-cursor="brief"><span>Démarrer un projet</span></a>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i></button>
+</header>
+
+<div class="menu" id="menu">
+  <div class="menu__inner">
+    <a href="#studio"><em>01</em>Studio</a>
+    <a href="#offre"><em>02</em>Offre</a>
+    <a href="#process"><em>03</em>Process</a>
+    <a href="#contact"><em>04</em>Contact</a>
+  </div>
+  <div class="menu__foot"><span>CASABLANCA · MAROC</span><span>contact@room112.ma</span></div>
+</div>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero__bg" aria-hidden="true">
+    <video class="hero__video" id="heroVideo" muted loop autoplay playsinline preload="none" data-src="assets/video/R112_Hero_Loop.mp4"></video>
+    <div class="hero__mark" data-parallax="0.12">
+      <svg viewBox="0 0 425.2 425.2" class="mark mark--ghost"><g>
+        <polygon points="36.57,111.4 36.57,34.87 114.8,34.87 114.8,47.62 49.32,47.62 49.32,111.4"/>
+        <polygon points="310.39,34.87 388.62,34.87 388.62,111.4 375.87,111.4 375.87,47.62 310.39,47.62"/>
+        <polygon points="36.57,285.73 49.32,285.73 49.32,349.51 114.8,349.51 114.8,362.26 36.57,362.26"/>
+        <polygon points="310.39,349.51 375.87,349.51 375.87,285.73 388.62,285.73 388.62,362.26 310.39,362.26"/>
+        <polygon points="101.2,153.07 147.97,128.41 147.97,299.33 101.2,299.33"/>
+        <polygon points="169.23,117.35 216,93.54 216,299.33 169.23,299.33"/>
+        <polygon points="322.3,198.14 280.63,226.2 280.63,244.91 322.3,244.91 322.3,299.33 238.11,299.33 238.11,207.49 281.48,178.58"/>
+        <polygon class="ghost-red" points="238.11,93.54 322.3,147.12 322.3,198.14 281.48,178.58 238.11,152.22"/>
+      </g></svg>
+    </div>
+    <div class="sweep"></div>
+    <div class="hero__grid"></div>
+  </div>
+
+  <div class="hud" aria-hidden="true">
+    <div class="hud__tl"><span class="rec"><i></i>REC</span><span class="hud__tc" id="tc">00:00:00:00</span></div>
+    <div class="hud__tr">4K · 24 FPS</div>
+    <div class="hud__bl">ROOM 112 · PRISE 1</div>
+    <div class="hud__br">CASABLANCA</div>
+    <span class="vb vb--tl"></span><span class="vb vb--tr"></span>
+    <span class="vb vb--bl"></span><span class="vb vb--br"></span>
+  </div>
+
+  <div class="hero__inner">
+    <p class="kicker reveal">Boîte de production visuelle</p>
+    <h1 class="hero__title">
+      <span class="line"><span>Une stratégie.</span></span>
+      <span class="line"><span>Des <em>images qui vendent</em>.</span></span>
+    </h1>
+    <p class="hero__sub reveal" data-delay="120">Photo, vidéo, direction artistique. Nous portons la production — vous gardez le client.</p>
+    <div class="hero__cta reveal" data-delay="220">
+      <a href="#contact" class="btn magnetic" data-brief data-cursor="brief"><span>Démarrer un projet</span></a>
+      <a href="#offre" class="btn btn--ghost magnetic" data-cursor="voir"><span>Voir l'offre</span></a>
+    </div>
+  </div>
+
+  <a href="#studio" class="scrollcue" data-cursor="scroll"><span>SCROLL</span><i></i></a>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Photo</span><b></b><span>Vidéo</span><b></b><span>Direction artistique</span><b></b><span>Films de marque</span><b></b><span>Reels</span><b></b><span>Meta / TikTok</span><b></b><span>Making-of</span><b></b>
+    <span>Photo</span><b></b><span>Vidéo</span><b></b><span>Direction artistique</span><b></b><span>Films de marque</span><b></b><span>Reels</span><b></b><span>Meta / TikTok</span><b></b><span>Making-of</span><b></b>
+  </div>
+</div>
+
+<!-- ============ STUDIO ============ -->
+<section class="sec sec--light" id="studio">
+  <div class="wrap">
+    <div class="sechead">
+      <span class="sechead__num reveal">01</span>
+      <h2 class="h2 split">Un studio de production, pas une agence 360.</h2>
+    </div>
+
+    <div class="pillars">
+      <article class="pillar reveal">
+        <div class="pillar__icon">
+          <svg viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="22" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M30 31 L18 52 M30 31 L42 52 M30 31 L30 52" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+        </div>
+        <h3>Le trépied</h3>
+        <p>Photo &amp; vidéo. Le cœur du métier.</p>
+      </article>
+      <article class="pillar reveal" data-delay="120">
+        <div class="pillar__icon"><span class="pillar__serif">A</span></div>
+        <h3>Le serif</h3>
+        <p>Direction artistique. Niveau premium.</p>
+      </article>
+      <article class="pillar reveal" data-delay="240">
+        <div class="pillar__icon"><span class="pillar__badge">112</span></div>
+        <h3>Le badge 112</h3>
+        <p>La pièce où tout se crée.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OFFRE ============ -->
+<section class="sec sec--light" id="offre">
+  <div class="wrap">
+    <div class="sechead">
+      <span class="sechead__num reveal">02</span>
+      <h2 class="h2 split">Trois niveaux.</h2>
+    </div>
+
+    <div class="offers">
+      <article class="offer is-open" data-offer>
+        <button class="offer__head">
+          <em>01</em><h3>Production &amp; contenu</h3>
+          <span class="offer__tag">Porte d'entrée</span><i class="offer__plus"></i>
+        </button>
+        <div class="offer__body"><div class="offer__inner">
+          <ul><li>Reels &amp; verticaux</li><li>Packshots</li><li>Lifestyle</li><li>Multi-formats</li></ul>
+          <span class="offer__for">Directeurs marketing &amp; agences</span>
+        </div></div>
+      </article>
+      <article class="offer" data-offer>
+        <button class="offer__head">
+          <em>02</em><h3>Direction artistique</h3>
+          <span class="offer__tag">Marge élevée</span><i class="offer__plus"></i>
+        </button>
+        <div class="offer__body"><div class="offer__inner">
+          <ul><li>Identité &amp; charte</li><li>DA de campagne</li><li>Moodboards</li><li>Templates</li></ul>
+          <span class="offer__for">Brand owners &amp; agences</span>
+        </div></div>
+      </article>
+      <article class="offer" data-offer>
+        <button class="offer__head">
+          <em>03</em><h3>Campagnes complètes</h3>
+          <span class="offer__tag">Récurrent</span><i class="offer__plus"></i>
+        </button>
+        <div class="offer__body"><div class="offer__inner">
+          <ul><li>Stratégie</li><li>Créas publicitaires</li><li>Meta / TikTok</li><li>Influence</li></ul>
+          <span class="offer__for">Brand owners</span>
+        </div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="sec sec--light" id="process">
+  <div class="wrap">
+    <div class="sechead">
+      <span class="sechead__num reveal">03</span>
+      <h2 class="h2 split">Le process porte le risque.</h2>
+    </div>
+
+    <ol class="steps">
+      <li class="step"><span class="step__n">01</span><h3>Brief</h3><p>Objectifs, cibles, formats.</p></li>
+      <li class="step"><span class="step__n">02</span><h3>Moodboard</h3><p>DA validée avant tournage.</p></li>
+      <li class="step"><span class="step__n">03</span><h3>Production</h3><p>Planning, équipe, lieux.</p></li>
+      <li class="step"><span class="step__n">04</span><h3>Livraison</h3><p>Multi-formats, délais tenus.</p></li>
+      <li class="step"><span class="step__n">05</span><h3>Reporting</h3><p>Résultats et prochain cycle.</p></li>
+      <i class="steps__line"><b id="stepsLine"></b></i>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="sec sec--dark sec--contact" id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <div class="contact__left">
+        <span class="sechead__num reveal">04</span>
+        <h2 class="h2 split">Parlons tournage.</h2>
+        <ul class="contact__info reveal" data-delay="200">
+          <li><em>E-mail</em><a href="mailto:contact@room112.ma" data-cursor="écrire">contact@room112.ma</a></li>
+          <li><em>Téléphone</em><a href="tel:+212000000000" data-cursor="appeler">+212 0 00 00 00 00</a></li>
+          <li><em>Studio</em><span>Casablanca, Maroc</span></li>
+          <li><em>Réseaux</em><span class="contact__socials"><a href="#" data-cursor="suivre">Instagram</a><i>·</i><a href="#" data-cursor="suivre">TikTok</a><i>·</i><a href="#" data-cursor="suivre">LinkedIn</a></span></li>
+        </ul>
+      </div>
+
+      <div class="contact__cta reveal" data-delay="160">
+        <button class="btn btn--red magnetic" data-brief data-cursor="brief"><span>Démarrer un projet</span></button>
+        <p class="form__note">Cinq lignes suffisent. Réponse sous 48 h.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <svg viewBox="0 0 425.2 425.2" class="mark footer__mark"><g>
+        <polygon class="mark__br" points="36.57,111.4 36.57,34.87 114.8,34.87 114.8,47.62 49.32,47.62 49.32,111.4"/>
+        <polygon class="mark__br" points="310.39,34.87 388.62,34.87 388.62,111.4 375.87,111.4 375.87,47.62 310.39,47.62"/>
+        <polygon class="mark__br" points="36.57,285.73 49.32,285.73 49.32,349.51 114.8,349.51 114.8,362.26 36.57,362.26"/>
+        <polygon class="mark__br" points="310.39,349.51 375.87,349.51 375.87,285.73 388.62,285.73 388.62,362.26 310.39,362.26"/>
+        <polygon class="mark__d" points="101.2,153.07 147.97,128.41 147.97,299.33 101.2,299.33"/>
+        <polygon class="mark__d" points="169.23,117.35 216,93.54 216,299.33 169.23,299.33"/>
+        <polygon class="mark__d" points="322.3,198.14 280.63,226.2 280.63,244.91 322.3,244.91 322.3,299.33 238.11,299.33 238.11,207.49 281.48,178.58"/>
+        <polygon class="mark__red" points="238.11,93.54 322.3,147.12 322.3,198.14 281.48,178.58 238.11,152.22"/>
+      </g></svg>
+      <p class="footer__claim">La pièce où tout se crée.</p>
+    </div>
+    <div class="footer__bar">
+      <span>© 2026 ROOM 112</span>
+      <span class="footer__pal"><i style="--c:#111111"></i><i style="--c:#FFFFFF"></i><i style="--c:#9E1B1B"></i>#111111 · #FFFFFF · #9E1B1B</span>
+      <a href="#top" data-cursor="haut">Haut</a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ============ POPUP BRIEF ============ -->
+<div class="modal" id="brief" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="briefTitle">
+  <div class="modal__panel" role="document">
+    <span class="vb vb--tl"></span><span class="vb vb--tr"></span>
+    <span class="vb vb--bl"></span><span class="vb vb--br"></span>
+    <button class="modal__close" id="briefClose" aria-label="Fermer"></button>
+    <p class="kicker">Nouveau brief</p>
+    <h3 class="modal__title" id="briefTitle">Démarrer un projet</h3>
+      <form class="form" id="form">
+        <div class="field"><label for="f-name">Nom</label><input id="f-name" name="name" type="text" required placeholder="Prénom et nom"></div>
+        <div class="field"><label for="f-org">Marque / agence</label><input id="f-org" name="org" type="text" placeholder="Structure"></div>
+        <div class="field"><label for="f-mail">E-mail</label><input id="f-mail" name="email" type="email" required placeholder="vous@marque.com"></div>
+        <div class="field"><label for="f-type">Vous êtes</label>
+          <select id="f-type" name="profil">
+            <option>Agence</option><option>Directeur marketing</option><option>Brand owner</option><option>Créateur</option>
+          </select>
+        </div>
+        <div class="field field--full"><label for="f-msg">Le projet</label><textarea id="f-msg" name="message" rows="3" required placeholder="Objectif, formats, échéance."></textarea></div>
+        <button class="btn btn--red magnetic" type="submit" data-cursor="envoyer"><span>Envoyer le brief</span></button>
+        <p class="form__note">Réponse sous 48 h.</p>
+      </form>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
